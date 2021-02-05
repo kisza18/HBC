@@ -53,11 +53,21 @@ nav {
   -webkit-text-stroke: 0.8px black;
 }
 
+.language {
+  display: flex;
+  align-items: center;
+}
+
 select {
+  font-size: 13px;
+  margin-right: 5px;
   border: none;
   background: none;
   outline: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .site-nav {
@@ -313,6 +323,12 @@ select {
   cursor: pointer;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.elso-content a:hover {
+  border: 1px solid #aa9055;
+  transition: 0.5s;
 }
 
 /* Imakérés/Hálaadás */
@@ -365,6 +381,12 @@ select {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 10px 15px;
+  transition: 0.5s;
+}
+
+.button-container a:hover {
+  border: 1px solid #aa9055;
+  transition: 0.5s;
 }
 
 /* Pásztoraink */
@@ -410,4 +432,30 @@ select {
   font-size: 15px;
   font-weight: 300;
   color: #464646;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #1f1f1f;
+  color: #f2f2f2;
+  padding: 100px;
+}
+
+.card {
+  padding: 40px;
+}
+
+.card h2 {
+  line-height: 24px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.card i {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
