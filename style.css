@@ -159,9 +159,8 @@ select {
 .showcase h1 {
   color: #fff;
   font-size: 75px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 80px;
-  letter-spacing: 0.05em;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -169,7 +168,7 @@ select {
 .showcase h2 {
   color: #fff;
   font-size: 34px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 32px;
   text-align: center;
 }
