@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.global-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 0 20px;
+  height: 44px;
+}
+
+.global-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.global-nav ul li:first-child {
+  padding-left: 0;
+}
+.global-nav ul li {
+  padding: 0 12px;
+}
+
+.global-nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.global-nav a:hover {
+  -webkit-text-stroke: 0.8px black;
+}
+
+select {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.site-nav {
+  height: 80px;
+  padding-bottom: 2px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav-logo {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 180px;
+  padding: 10px 0 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.site-nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.site-nav-logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 80px;
+  text-align: center;
+}
+
+.site-nav-list li {
+  display: inline;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav-list a {
+  color: #000;
+  padding: 30px 10px 29px;
+  text-decoration: none;
+}
+
+.site-nav-list a:hover {
+  color: #aa9055;
+  border-bottom: 3px solid #aa9055;
+}
+
+.wrapper {
+  margin-top: 124px;
+  position: absolute;
+}
+
+/* showcase */
+.showcase {
+  width: 100vw;
+  height: calc(100vh - 124px);
+  display: flex;
+  background: url("./pics/showcase.jpg") no-repeat center center/cover;
+  background-position: 0% -60%;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.showcase-content {
+  margin-top: 220px;
+}
+
+.showcase h1 {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.showcase h2 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+
+/* welcome */
+.welcome {
+  width: 100%;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.welcome-content h2 {
+  color: #464646;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.welcome-content p {
+  color: #464646;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* online */
+.online {
+  width: 100%;
+  background: #1f1f1f;
+}
+
+.online-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.online-content h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.online-content a {
+  border: 1px solid #cfdc0b;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #cfdc0b;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Covid */
+.covid {
+  width: 100%;
+  background: url("./pics/covid.jpg") no-repeat center center/cover fixed;
+}
+
+.covid-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.covid-content h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.covid-content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Első lépések */
+.elso {
+  width: 100%;
+  background: #3b4aad;
+}
+
+.elso-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.elso-content h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.elso p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.elso-content a {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Imakérés/Hálaadás */
+.imahala {
+  width: 100%;
+  background: url("./pics/pray.jpg") no-repeat center center/cover fixed;
+}
+
+.imahala-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.imahala-content h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.imahala-content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container a {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+/* Pásztoraink */
+.pasztor {
+  width: 100%;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.pasztor h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #464646;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.pasztor-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.pasztor-card img {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.pasztor-card h2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #464646;
+  margin-bottom: 5px;
+}
+
+.pasztor-card p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #464646;
+}
