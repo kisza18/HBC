@@ -135,6 +135,21 @@ select {
   border-bottom: 3px solid #aa9055;
 }
 
+.mobile-menu {
+  display: none;
+  margin-top: 17px;
+  margin-right: 10px;
+}
+
+.mobile-menu span {
+  display: block;
+  background: #1f1f1f;
+  width: 20px;
+  height: 2px;
+  margin: 4px;
+  border-radius: 3px;
+}
+
 .wrapper {
   margin-top: 124px;
   position: absolute;
@@ -146,10 +161,11 @@ select {
   height: calc(100vh - 124px);
   display: flex;
   background: url("./pics/showcase.jpg") no-repeat center center/cover;
-  background-position: 0% -60%;
+  background-position: center center;
   background-attachment: fixed;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
 }
 
 .showcase-content {
@@ -408,6 +424,7 @@ select {
   max-width: 900px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 30px;
@@ -457,4 +474,225 @@ select {
 .card i {
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+/* media queries */
+@media (max-width: 1140px) {
+  .site-nav {
+    justify-content: end;
+  }
+
+  .site-nav-list {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 980px) {
+  .showcase-content {
+    position: absolute;
+    top: 40%;
+    margin: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .global-nav {
+    display: none;
+  }
+
+  .site-nav {
+    height: 50px;
+  }
+
+  .site-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50px;
+    height: 100vh;
+    background: #f2f2f2;
+    margin-right: 0;
+    width: 90%;
+    padding-top: 10px;
+    transform: translateX(1000px);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .site-nav-list.show {
+    transform: translateX(20px);
+  }
+
+  body.scrollDisable {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .site-nav-item {
+    color: #000;
+    padding: 10px 5px;
+    text-decoration: none;
+  }
+
+  .site-nav-item a {
+    font-size: 14px;
+  }
+
+  .site-nav-item a:hover {
+    color: #aa9055;
+    border-bottom: none;
+  }
+
+  .site-nav-logo {
+    padding-left: 10px;
+  }
+
+  .site-nav-logo img {
+    height: 35px;
+  }
+
+  .wrapper {
+    margin-top: 50px;
+  }
+
+  .showcase {
+    height: calc(100vh - 50px);
+  }
+}
+
+@media (max-width: 767px) {
+  .showcase {
+    height: calc(100vh);
+  }
+
+  .showcase-content {
+    position: absolute;
+    top: 40%;
+    margin: 0;
+  }
+
+  .showcase-content h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+
+  .showcase-content h2 {
+    font-size: 18px;
+  }
+
+  .welcome-content {
+    padding: 70px 15px;
+  }
+
+  .welcome-content h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    line-height: 26px;
+  }
+
+  .welcome-content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .wrapper {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .online-content {
+    padding: 70px 15px;
+  }
+
+  .online-content h1 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .covid {
+    background-attachment: scroll;
+  }
+
+  .covid-content {
+    padding: 80px 15px;
+  }
+
+  .covid-content h1 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .covid-content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .elso-content {
+    padding: 60px 15px;
+  }
+
+  .elso-content h1 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .elso-content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .imahala {
+    background-attachment: scroll;
+  }
+
+  .imahala-content {
+    padding: 60px 15px;
+  }
+
+  .imahala-content h1 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .imahala-content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .pasztor {
+    padding: 50px 15px;
+  }
+
+  .pasztor h1 {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .pasztor-container {
+    padding: 10px 15px;
+    justify-content: center;
+  }
+
+  .pasztor-card {
+    padding: 20px;
+  }
+
+  .pasztor-card img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 50px 15px;
+  }
 }
