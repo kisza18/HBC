@@ -148,6 +148,16 @@ select {
   height: 2px;
   margin: 4px;
   border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.mobile-menu-top.active {
+  transform: translate3d(0, 3px, 0) rotate(45deg);
+}
+
+.mobile-menu-bottom.active {
+  transform: translate3d(0, -3px, 0) rotate(-45deg);
 }
 
 .wrapper {
@@ -693,6 +703,10 @@ select {
 
   .footer-container {
     flex-direction: column;
-    padding: 50px 15px;
+    padding: 40px 15px;
+  }
+
+  .card {
+    padding: 20px;
   }
 }
